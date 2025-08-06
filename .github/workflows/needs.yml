@@ -11,7 +11,7 @@ jobs:
       - name: Print build
         run: echo 'build' 
   test:
-    needs: build
+    
     runs-on: windows-latest
     steps: 
      - name: Print test - chrome 
