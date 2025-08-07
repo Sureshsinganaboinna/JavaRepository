@@ -11,7 +11,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   - name: Print
-    run: |
-     echo ' ${{secrets.PASSWORD}}'
+    run: echo ' ${{env.MY_VAR}}'
     env:
      MY_VAR: steps
